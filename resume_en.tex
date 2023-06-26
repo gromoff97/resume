@@ -1,0 +1,132 @@
+\documentclass[hidelinks,12pt,a4paper,oneside]{article}
+
+\usepackage{setspace}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{minipage-marginpar}
+\usepackage{xcolor}
+\usepackage[absolute,overlay]{textpos}
+  \setlength{\TPHorizModule}{1mm}
+  \setlength{\TPVertModule}{1mm}
+\usepackage{scrextend}
+\usepackage{multirow}
+\usepackage{tabularx}
+
+\usepackage{xcolor}
+%COLORS
+\definecolor{paynes-grey}{RGB}{83, 104, 120}
+\definecolor{marengo}{RGB}{76, 88, 102}
+\definecolor{sorange}{RGB}{255, 70, 0}
+\definecolor{sblue1}{RGB}{34, 76, 152}
+\definecolor{sblue2}{RGB}{22, 124, 185}
+\definecolor{sgreen}{RGB}{8, 166, 82}
+\definecolor{amber}{rgb}{1.0, 0.75, 0.0}
+
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+\usepackage{upquote}
+\setlength{\parskip}{0pt}
+\usepackage[a4paper,left=3cm,right=2cm,top=2.5cm,bottom=2.5cm]{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=10mm,
+ top=5mm,
+bottom = 6mm
+ }
+\onehalfspacing
+
+%COMMANDS
+\newcommand*\ruleline[1]{\par\noindent\raisebox{.8ex}{\makebox[\linewidth]{\hrulefill\hspace{1ex}\raisebox{-.8ex}{#1}\hspace{1ex}\hrulefill}}}
+\newcommand*\simpleruleline[1]{\par\noindent\raisebox{.8ex}{\makebox[\linewidth]{\hrulefill\hspace{#1}}}}
+\newcommand*\tqs{\textquotesingle}
+
+\begin{document}
+%
+%
+% ENGLISH VERSION OF RESUME
+%
+%
+\thispagestyle{empty}
+{ \LARGE \ruleline{Anton Gromov} }
+\begin{itemize}[topsep=5pt, itemsep=-9pt]
+	\item[] Saint-Petersburg, Russia
+	\item[] Phone: 8-962-840-62-50
+	\item[] E-mail: \href{mailto://gromoff97@mail.ru}{gromoff97@mail.ru}
+	\item[] Skype: gromoff97
+	\item[] Github: \href{https://github.com/gromoff97}{github.com/gromoff97}
+	\item[] Birthdate: Aug 22, 1997
+\end{itemize}
+\simpleruleline{1ex}
+\begin{textblock}{20}(130, 12)
+	\includegraphics[scale=0.25]{myphoto_rounded_corners.png}
+\end{textblock}
+\
+{\Large \underline{\textbf{Goal}}}: Java QA Automation Engineer with possibilty of professional growth (Remote). \\[3px]
+{\Large \underline{\textbf{Summary}}}: 
+{\normalsize
+\begin{itemize}[noitemsep]
+	\item 5 years experience in progamming with JVM\ -\ languages (Core \tqs Java\tqs /  \tqs Groovy\tqs);
+	\item 3 years experience in unit/integration testing (\tqs JUnit\tqs/\tqs TestNG\tqs/\tqs Spock\tqs);
+	\item Spring Framework - experience (Core/JdbcTemplate/RestTemplate)
+	\item 2-year experience in WebUI test automation (\tqs Selenium\tqs/\tqs Selenide\tqs);
+	\item ANSI SQL overall understanding (\tqs MyBatis\tqs - mappers implementation);
+	\item 4 years experience in using \tqs UNIX\tqs --like distributions (\tqs FreeBSD\tqs, \tqs Arch\tqs, \tqs Kali\tqs);
+	\item Experience in Shell-scripting and system programming in \tqs UNIX\tqs -- like environment;
+	\item 5 years experience in using \tqs Git\tqs;
+	\item Experience with imperative and declarative build tools (\tqs Maven\tqs, \tqs Gradle\tqs, \tqs Make\tqs)
+	\item Writing and speaking English skills at Upper-Intermediate level (B2/2).
+\end{itemize}}
+\vspace{-15px}
+\ \\
+{\Large \underline{\textbf{Experience}}}:
+\begin{addmargin}[1em]{2em}% 1em left, 2em right
+\vspace{11px}
+{\large
+\tqs \href{https://www.beeline.ru/}{\color{amber}{\underline{PJSC VimpelCom}}}\tqs,\ Software Test Automation Engineer {\small(since 08.2022 to present)}} \\
+\textcolor{marengo} {
+	{\small \tqs Claim Management\tqs\ - service;  Backend test automation.}
+}
+\simpleruleline{6ex} \\
+{\large
+\tqs \href{https://www.luxoft.com/}{\color{sblue1}{\underline{Luxoft}}}\tqs,\ Software Test Automation Engineer {\small(since 10.2020 - 08.2022)}} \\
+\textcolor{marengo} {
+	{\small \tqs Mir\tqs\ Loyalty Portal;  UI\ \slash\  Backend test automation.}
+}
+\simpleruleline{6ex} \\
+{\large
+\tqs \href{https://www.sberbank.ru/}{\color{sgreen}{\underline{Sberbank}}}\tqs,\ Software Test Automation Engineer {\small(01.2020 - 10.2020)}} \\
+\textcolor{marengo} {
+	{\small \tqs PPRB\tqs\ - platform; UI test automation.}  {\scriptsize (06.2020 - 10.2020)} \\
+	{\small \tqs EKS\tqs\ - platform; Internal API test automation.} {\scriptsize (01.2020 - 06.2020)}
+}
+\simpleruleline{6ex} \\
+{\large
+\tqs \href{https://www.performance-lab.ru/}{\color{sblue2}{\underline{Performance Lab}}}\tqs, Software Test Automation Engineer {\small(12.2018 - 01.2020)}} \\
+\textcolor{marengo} {
+	{\small \tqs EKS\tqs\ - platform; Internal API test automation.} {\scriptsize (6.2019 - 01.2020)} \\
+	{\small \tqs UXCrowd\tqs\ - platform; UI test automation.} {\scriptsize (12.2018 - 06.2019)}
+}
+\simpleruleline{6ex} \\
+{\large
+\tqs \href{https://webdefine.net/}{\color{sorange}{\underline{Define Developers}}}\tqs,\ Fullstack web\ - developer {\small(03.2018 - 12.2018, \emph{\textbf{part-time}})}} \\
+\textcolor{marengo} {
+	{\small \tqs Makena\tqs: developing and supporting PHP - code responsible for website translation process.} \\
+	{\small \tqs Dariedu\tqs: online payment module's actuzlization.} \\
+	{\small \tqs Webdefine\tqs:  shell-scripts development for Ubuntu-server aiming to simplify business processes.}
+}
+\end{addmargin}
+\vspace{-12px}
+\ \\
+{\Large \underline{\textbf{Education}}}: \\ [3px]
+\indent {\large \href{https://en.itmo.ru/}{ITMO University} (Saint-Petersburg) \\
+\indent Faculty of Software Engineering and Computer Systems
+\end{document}

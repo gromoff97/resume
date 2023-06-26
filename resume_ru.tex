@@ -1,0 +1,128 @@
+\documentclass[hidelinks,12pt,a4paper,oneside]{article}
+
+\usepackage{setspace}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{minipage-marginpar}
+\usepackage{xcolor}
+\usepackage[absolute,overlay]{textpos}
+  \setlength{\TPHorizModule}{1mm}
+  \setlength{\TPVertModule}{1mm}
+\usepackage{scrextend}
+\usepackage{multirow}
+\usepackage{tabularx}
+
+\usepackage{xcolor}
+%COLORS
+\definecolor{paynes-grey}{RGB}{83, 104, 120}
+\definecolor{marengo}{RGB}{76, 88, 102}
+\definecolor{sorange}{RGB}{255, 70, 0}
+\definecolor{sblue1}{RGB}{34, 76, 152}
+\definecolor{sblue2}{RGB}{22, 124, 185}
+\definecolor{sgreen}{RGB}{8, 166, 82}
+
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+\usepackage{upquote}
+\setlength{\parskip}{0pt}
+\usepackage[a4paper,left=3cm,right=2cm,top=2.5cm,bottom=2.5cm]{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=10mm,
+ top=5mm,
+bottom = 6mm
+ }
+\onehalfspacing
+
+%COMMANDS
+\newcommand*\ruleline[1]{\par\noindent\raisebox{.8ex}{\makebox[\linewidth]{\hrulefill\hspace{1ex}\raisebox{-.8ex}{#1}\hspace{1ex}\hrulefill}}}
+\newcommand*\simpleruleline[1]{\par\noindent\raisebox{.8ex}{\makebox[\linewidth]{\hrulefill\hspace{#1}}}}
+\newcommand*\tqs{\textquotesingle}
+
+\begin{document}
+%
+%
+% ENGLISH VERSION OF RESUME
+%
+%
+\thispagestyle{empty}
+{ \LARGE \ruleline{Антон Громов} }
+{\large
+\begin{itemize}[topsep=5pt, itemsep=-11pt]
+	\item[] Санкт-Петербург, Россия
+	\item[] Телефон: 8-962-840-62-50
+	\item[] E-mail: \href{mailto://gromoff97@mail.ru}{gromoff97@mail.ru}
+	\item[] Skype: gromoff97
+	\item[] Github: \href{https://github.com/gromoff97}{github.com/gromoff97}
+	\item[] Дата рождения: 22.08.1997
+\end{itemize}
+\simpleruleline{1ex}
+}
+\begin{textblock}{20}(130, 12)
+	\includegraphics[scale=0.30]{myphoto.jpg}
+\end{textblock}
+\
+{\Large \underline{\textbf{Цель}}}: \\[3px]
+\indent {\large Java QA - инженер автоматизации с возможностью проф. роста (Remote).} \\[3px]
+{\Large \underline{\textbf{Навыки}}}: 
+{\normalsize
+\begin{itemize}[noitemsep]
+	\item 5 лет программирования на JVM\ -\ языках (Core \tqs Java\tqs /  \tqs Groovy\tqs);
+	\item 3 года модульного/интеграционного тестирования (\tqs JUnit\tqs/\tqs TestNG\tqs/\tqs Spock\tqs);
+	\item Опыт использования Spring Framework-а (Core/JdbcTemplate/RestTemplate)
+	\item 2 года опыта автоматизации тестирования UI-приложений (\tqs Selenium\tqs/\tqs Selenide\tqs);
+	\item Общее понимание ANSI SQL (реализация мапперов в \tqs MyBatis\tqs);
+	\item 4 года опыта использования \tqs UNIX\tqs -- like ОС (\tqs FreeBSD\tqs, \tqs Arch\tqs, \tqs Kali\tqs);
+	\item Опыт системного программирования и написания Shell-скриптов в \tqs UNIX\tqs -- like средах;
+	\item 5 лет опыта использования \tqs Git\tqs;
+	\item Опыт использования систем сборок (\tqs Maven\tqs, \tqs Gradle\tqs, \tqs Make\tqs)
+	\item Уровень знания английского - выше среднего (B2/2).
+\end{itemize}}
+\vspace{-15px}
+\ \\
+{\Large \underline{\textbf{Опыт}}}:
+\begin{addmargin}[1em]{2em}% 1em left, 2em right
+\vspace{11px}
+{\large
+\tqs \href{https://www.luxoft.com/}{\color{sblue1}{\underline{Luxoft}}}\tqs,\ Инженер автоматизации тестирования {\small(10.2020 - 07.2022)}} \\
+\textcolor{marengo} {
+	{\small Портал лояльности \tqs МИР\tqs;  UI\ \slash\  Backend - тестирование.} {\scriptsize (10.2020 - 03.2022)}
+}
+\simpleruleline{6ex} \\
+{\large
+\tqs \href{https://www.sberbank.ru/}{\color{sgreen}{\underline{Сбербанк}}}\tqs,\ Инженер автоматизации тестирования {\small(01.2020 - 10.2020)}} \\
+\textcolor{marengo} {
+	{\small Платформа \tqs ППРБ\tqs; UI - тестирование.}  {\scriptsize (06.2020 - 10.2020)} \\
+	{\small Платформа \tqs ЕКС\tqs; тестирование внутреннего API.} {\scriptsize (01.2020 - 06.2020)}
+}
+\simpleruleline{6ex} \\
+{\large
+\tqs \href{https://www.performance-lab.ru/}{\color{sblue2}{\underline{Performance Lab}}}\tqs, Инженер автоматизации тестирования {\small(12.2018 - 01.2020)}} \\
+\textcolor{marengo} {
+	{\small Платформа \tqs ЕКС\tqs; тестирование внутреннего API.} {\scriptsize (6.2019 - 01.2020)} \\
+	{\small Платформа \tqs UXCrowd\tqs\; UI - тестирование.} {\scriptsize (12.2018 - 06.2019)}
+}
+\simpleruleline{6ex} \\
+{\large
+\tqs \href{https://webdefine.net/}{\color{sorange}{\underline{Define Developers}}}\tqs,\ Fullstack веб\ - разработчик {\small(03.2018 - 12.2018, \emph{\textbf{частичн.}})}} \\
+\textcolor{marengo} {
+	{\small \tqs Makena\tqs: разработка и поддержка PHP - кода, ответственного за процесс перевода страниц.} \\
+	{\small \tqs Дариеду\tqs: актуализация модуля оплаты.} \\
+	{\small \tqs Webdefine\tqs:  Разработка Shell-скриптов в целях упрощения бизнес-процессов.}
+}
+\end{addmargin}
+\vspace{-12px}
+\ \\
+{\Large \underline{\textbf{Образование}}}: \\ [3px]
+\indent {\large \href{https://itmo.ru/}{Университет ИТМО} (Санкт-Петербург) \\
+\indent Факультет программной инженерии и компьютерных систем
+\end{document}
