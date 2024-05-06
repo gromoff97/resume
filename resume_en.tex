@@ -16,6 +16,7 @@
 \usepackage{scrextend}
 \usepackage{multirow}
 \usepackage{tabularx}
+\usepackage{amsmath}
 
 \usepackage{xcolor}
 %COLORS
@@ -26,6 +27,7 @@
 \definecolor{sblue2}{RGB}{22, 124, 185}
 \definecolor{sgreen}{RGB}{8, 166, 82}
 \definecolor{amber}{rgb}{1.0, 0.75, 0.0}
+\definecolor{smktc}{RGB}{255, 51, 95}
 
 \usepackage[colorlinks = true,
             linkcolor = blue,
@@ -49,6 +51,10 @@ bottom = 6mm
 \newcommand*\simpleruleline[1]{\par\noindent\raisebox{.8ex}{\makebox[\linewidth]{\hrulefill\hspace{#1}}}}
 \newcommand*\tqs{\textquotesingle}
 
+
+\def\Plus{\texttt{+}}
+\def\Minus{\texttt{-}}
+
 \begin{document}
 %
 %
@@ -59,25 +65,24 @@ bottom = 6mm
 { \LARGE \ruleline{Anton Gromov} }
 \begin{itemize}[topsep=5pt, itemsep=-9pt]
 	\item[] Saint-Petersburg, Russia
-	\item[] Phone: 8-962-840-62-50
-	\item[] E-mail: \href{mailto://gromoff97@mail.ru}{gromoff97@mail.ru}
-	\item[] Skype: gromoff97
-	\item[] Github: \href{https://github.com/gromoff97}{github.com/gromoff97}
-	\item[] Birthdate: Aug 22, 1997
+	\item[] \Plus7\Minus962\Minus840\Minus62\Minus50
+	\item[] \href{mailto://gromoff97@mail.ru}{gromoff97@mail.ru}
+	\item[] \href{https://github.com/gromoff97}{github.com/gromoff97}
+	\item[] \href{https://telegram.me/chill_and_learn}{@chill\_and\_learn}
 \end{itemize}
 \simpleruleline{1ex}
 \begin{textblock}{20}(130, 12)
 	\includegraphics[scale=0.25]{myphoto_rounded_corners.png}
 \end{textblock}
 \
-{\Large \underline{\textbf{Goal}}}: Java QA Automation Engineer with possibilty of professional growth (Remote). \\[3px]
+{\Large \underline{\textbf{Goal}}}: QA Automation Engineer with possibilty of professional growth (Remote) \\[3px]
 {\Large \underline{\textbf{Summary}}}: 
 {\normalsize
 \begin{itemize}[noitemsep]
-	\item 5 years experience in progamming with JVM\ -\ languages (Core \tqs Java\tqs /  \tqs Groovy\tqs);
+	\item 5 years experience in progamming with JVM\ -\ languages (Core \tqs Java\tqs /  \tqs Groovy\tqs / \tqs Kotlin \tqs);
 	\item 3 years experience in unit/integration testing (\tqs JUnit\tqs/\tqs TestNG\tqs/\tqs Spock\tqs);
 	\item Spring Framework - experience (Core/JdbcTemplate/RestTemplate)
-	\item 2-year experience in WebUI test automation (\tqs Selenium\tqs/\tqs Selenide\tqs);
+	\item 2-year experience in WebUI test automation (\tqs Selenium\tqs/\tqs Selenide\tqs/\tqs Playwright\tqs);
 	\item ANSI SQL overall understanding (\tqs MyBatis\tqs - mappers implementation);
 	\item 4 years experience in using \tqs UNIX\tqs --like distributions (\tqs FreeBSD\tqs, \tqs Arch\tqs, \tqs Kali\tqs);
 	\item Experience in Shell-scripting and system programming in \tqs UNIX\tqs -- like environment;
@@ -87,41 +92,40 @@ bottom = 6mm
 \end{itemize}}
 \vspace{-15px}
 \ \\
-{\Large \underline{\textbf{Experience}}}:
+{\Large \underline{\textbf{Experience}}} {\footnotesize (full-time as a software test automation engineer)}:
 \begin{addmargin}[1em]{2em}% 1em left, 2em right
 \vspace{11px}
 {\large
-\tqs \href{https://www.beeline.ru/}{\color{amber}{\underline{PJSC VimpelCom}}}\tqs,\ Software Test Automation Engineer {\small(since 08.2022 to present)}} \\
+\href{https://www.beeline.ru/}{\color{smktc}{\underline{Samokat.tech}}} {\small(since 10.2022 to present)}} \\
 \textcolor{marengo} {
-	{\small \tqs Claim Management\tqs\ - service;  Backend test automation.}
+	{\small \tqs Pricing Engine\tqs\ -  Backend tests automation.} \\
+	{\small \tqs Megamarket\tqs\ -  UI tests automation.}
 }
 \simpleruleline{6ex} \\
 {\large
-\tqs \href{https://www.luxoft.com/}{\color{sblue1}{\underline{Luxoft}}}\tqs,\ Software Test Automation Engineer {\small(since 10.2020 - 08.2022)}} \\
+\href{https://www.beeline.ru/}{\color{amber}{\underline{PJSC VimpelCom}}} {\small(08.2022 - 10.2023)}} \\
 \textcolor{marengo} {
-	{\small \tqs Mir\tqs\ Loyalty Portal;  UI\ \slash\  Backend test automation.}
+	{\small \tqs Claim Management\tqs\ - service;  Backend tests automation.}
 }
 \simpleruleline{6ex} \\
 {\large
-\tqs \href{https://www.sberbank.ru/}{\color{sgreen}{\underline{Sberbank}}}\tqs,\ Software Test Automation Engineer {\small(01.2020 - 10.2020)}} \\
+\href{https://www.luxoft.com/}{\color{sblue1}{\underline{Luxoft}}} {\small(10.2020 - 08.2022)}} \\
 \textcolor{marengo} {
-	{\small \tqs PPRB\tqs\ - platform; UI test automation.}  {\scriptsize (06.2020 - 10.2020)} \\
-	{\small \tqs EKS\tqs\ - platform; Internal API test automation.} {\scriptsize (01.2020 - 06.2020)}
+	{\small \tqs Mir\tqs\ Loyalty Portal;  UI\ \slash\  Backend tests automation.}
 }
 \simpleruleline{6ex} \\
 {\large
-\tqs \href{https://www.performance-lab.ru/}{\color{sblue2}{\underline{Performance Lab}}}\tqs, Software Test Automation Engineer {\small(12.2018 - 01.2020)}} \\
+\href{https://www.sberbank.ru/}{\color{sgreen}{\underline{Sberbank}}} {\small(01.2020 - 10.2020)}} \\
 \textcolor{marengo} {
-	{\small \tqs EKS\tqs\ - platform; Internal API test automation.} {\scriptsize (6.2019 - 01.2020)} \\
-	{\small \tqs UXCrowd\tqs\ - platform; UI test automation.} {\scriptsize (12.2018 - 06.2019)}
+	{\small \tqs PPRB\tqs\ - platform; UI tests automation.}  {\scriptsize (06.2020 - 10.2020)} \\
+	{\small \tqs EKS\tqs\ - platform; Internal API tests automation.} {\scriptsize (01.2020 - 06.2020)}
 }
 \simpleruleline{6ex} \\
 {\large
-\tqs \href{https://webdefine.net/}{\color{sorange}{\underline{Define Developers}}}\tqs,\ Fullstack web\ - developer {\small(03.2018 - 12.2018, \emph{\textbf{part-time}})}} \\
+\href{https://www.performance-lab.ru/}{\color{sblue2}{\underline{Performance Lab}}} {\small(12.2018 - 01.2020)}} \\
 \textcolor{marengo} {
-	{\small \tqs Makena\tqs: developing and supporting PHP - code responsible for website translation process.} \\
-	{\small \tqs Dariedu\tqs: online payment module's actuzlization.} \\
-	{\small \tqs Webdefine\tqs:  shell-scripts development for Ubuntu-server aiming to simplify business processes.}
+	{\small \tqs EKS\tqs\ - platform; Internal API tests automation.} {\scriptsize (6.2019 - 01.2020)} \\
+	{\small \tqs UXCrowd\tqs\ - platform; UI tests automation.} {\scriptsize (12.2018 - 06.2019)}
 }
 \end{addmargin}
 \vspace{-12px}
